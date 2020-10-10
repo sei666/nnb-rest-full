@@ -1,0 +1,42 @@
+GET http://localhost:8080/getArcEvents?year=2020&month=-1
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/restService/ArcPoster?arcPosterId=76165
+Content-Type: application/json
+
+###
+
+
+GET http://78.110.153.64:9365/downloadBook?searchName=телега&bid=164128
+Content-Type: application/json
+
+###
+
+GET http://192.168.1.200:9365/downloadBook?searchName=qwe&bid=171703
+Content-Type: application/json
+
+###
+
+#POST http://localhost:8080/search
+POST http://78.110.153.64:9365/search
+#POST http://192.168.1.200:9365/search
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; name="pageNumber";
+
+1
+
+--boundary
+Content-Disposition: form-data; name="searchName";
+
+qwe
+
+--boundary
+Content-Disposition: form-data; name="fromMainSearch";
+
+true
+
+###
